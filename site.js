@@ -25,6 +25,9 @@ const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
       created () {
+            // Set the document title from the Vue data
+            if (this.siteTitle) document.title = this.siteTitle
+
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
             })
@@ -34,8 +37,8 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            siteTitle: 'IS219 Gallery (Project 3)',
-            owner: 'chrisdemee',
+            siteTitle: 'IMDB + Chris top movies',
+            owner: 'Chris Demetri',
             githubRepo: 'https://github.com/chrisdemee/NJITMovieGallery'
          
       }
