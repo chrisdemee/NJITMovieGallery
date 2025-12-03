@@ -35,28 +35,28 @@
 
 	      <div class="row">
 
-	        <div class="col-md-6">
-	            <div class="thumbnail">
+			<div class="row">
 
-						<img class="poster img-fluid" :src="movies[0] && movies[0].posters ? movies[0].posters[movies[0].posterindex] : ''" alt="Poster" />
-						<div class="imageInfo">{{ movies[0] ? movies[0].posterindex : '' }}</div>
+				<div class="col-md-6" v-for="(movie, index) in movies" :key="index">
+						<div class="thumbnail">
 
-						<p class="title">{{ movies[0] ? movies[0].title : '' }} ({{ movies[0] ? movies[0].country : '' }})</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ movies[0] ? movies[0].iscore : '' }} </p>
-						<p class="runtime">Runtime: {{ movies[0] ? movies[0].runtime : '' }}</p>
-						<p class="released">Released: {{ movies[0] ? (movies[0].released ? movies[0].released.join('-') : '') : '' }} | Rated: {{ movies[0] ? movies[0].rating : '' }}</p>
-						<p class="websites">Websites: <a :href="movies[0] ? movies[0].imdb : '#'" target="_blank">imdb</a> | <a :href="movies[0] ? movies[0].website : '#'" target="_blank">website</a></p>
+												<img class="poster img-fluid" :src="movie.posters && movie.posters[movie.posterindex] ? movie.posters[movie.posterindex] : ''" :alt="movie.title" />
+												<div class="imageInfo">{{ index }}</div>
 
-			            <div class="social">
-						  <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ movies[0] ? movies[0].likes : '' }}</p>
-						  <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{ movies[0] ? movies[0].dislikes : '' }}</p>
-			            </div>
-	            </div>
-	        </div>
+												<p class="title">{{ movie.title }} ({{ movie.country }})</p>
+												<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
+												<p class="runtime">Runtime: {{ movie.runtime }}</p>
+												<p class="released">Released: {{ movie.released ? movie.released.join('-') : '' }} | Rated: {{ movie.rating }}</p>
+												<p class="websites">Websites: <a :href="movie.imdb" target="_blank">imdb</a> | <a :href="movie.website" target="_blank">website</a></p>
 
-	      </div>
-	    </div>
+												<div class="social">
+													<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
+													<p class="dislikes"><i class="bi bi-hand-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}</p>
+												</div>
+						</div>
+				</div>
 
+			</div>
 	    <div class="footer">
 							<div class="container">
 						<a id="github" class="btn btn-lg btn-warning" :href="githubRepo" target="_blank">
