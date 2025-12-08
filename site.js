@@ -74,7 +74,32 @@ const vue_app = Vue.createApp({
                   
                   return `${monthText} ${day}, ${year}`;
             }
-      }
+            ,
+            like(index) {
+                  if (!this.movies || !this.movies[index]) return
+                  const m = this.movies[index]
+                  if (typeof m.likes !== 'number') m.likes = 0
+                  m.likes = m.likes + 1
+            },
+            dislike(index) {
+                  if (!this.movies || !this.movies[index]) return
+                  const m = this.movies[index]
+                  if (typeof m.dislikes !== 'number') m.dislikes = 0
+                  m.dislikes = m.dislikes + 1
+            } ,
+            posterClick(index) {
+                  if (!this.movies || !this.movies[index]) return
+                  const m = this.movies[index]
+                  if (!Array.isArray(m.posters) || m.posters.length === 0) return
+                  if (typeof m.posterindex !== 'number') m.posterindex = 0
+                  m.posterindex = (m.posterindex + 1) % m.posters.length
+            },
+            timeText(minutes) {
+                  const hrs = Math.trunc(minutes / 60)
+                  const mins = minutes % 60
+                  return `${hrs}h ${mins}m`
+            }
+
 })
 
 vue_app.mount("#vue_app")
