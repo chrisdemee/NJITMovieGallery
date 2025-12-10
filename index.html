@@ -21,7 +21,8 @@
 </head>
 
   <body>
-	<div id="vue_app" class="container">
+	<style>[v-cloak]{display:none}</style>
+	<div id="vue_app" class="container" v-cloak>
 
 	    <div class="header">
 
@@ -66,8 +67,33 @@
 	    </div>
 	</div>
 
-  	<!-- This load the Vue.js code -->
-	<script type="text/javascript" src="site.js"></script>
+	<!-- Load site.js only after Vue is available (fallback loader) -->
+	<script>
+	(function(){
+		function loadScript(src, cb){
+			var s = document.createElement('script');
+			s.src = src;
+			s.onload = cb;
+			s.onerror = function(){ console.error('Failed to load', src); if(cb) cb(new Error('load error')); };
+			document.head.appendChild(s);
+		}
+
+		function ensureVueAndLoadSite(){
+			if(window.Vue){ loadScript('site.js'); return; }
+			// Try primary CDN first
+			loadScript('https://unpkg.com/vue@3/dist/vue.global.prod.js', function(err){
+				if(window.Vue){ loadScript('site.js'); return; }
+				// fallback to jsDelivr
+				loadScript('https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js', function(){
+					if(window.Vue) loadScript('site.js');
+					else console.error('Vue failed to load from both CDNs.');
+				});
+			});
+		}
+
+		ensureVueAndLoadSite();
+	})();
+	</script>
 
 
 </body>
