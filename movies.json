@@ -68,5 +68,70 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Logan",
+            "iscore": 8.1,
+            "rating": "R",
+            "runtime": 137,
+            "released": [2017, 3, 3],
+            "country": "USA",
+            "posters": ["img/logan1.jpg", "img/logan2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt3315342/",
+            "website": "https://www.foxmovies.com/movies/logan",
+            "likes": 500,
+            "dislikes": 30,
+            "posterindex": 0
+      },
+      {
+            "title": "Baby Driver",
+            "iscore": 7.6,
+            "rating": "R",
+            "runtime": 113,
+            "released": [2017, 6, 28],
+            "country": "USA",
+            "posters": [
+                  "https://m.media-amazon.com/images/I/717QDxYBkbL._AC_UF894,1000_QL80_.jpg",
+                  "https://www.amazon.com/BABY-DRIVER-Original-Poster-Wright/dp/B073RPP8VQ"
+            ],
+            "imdb": "https://www.imdb.com/title/tt3890160/",
+            "website": "https://www.sonypictures.com/movies/babydriver",
+            "likes": 420,
+            "dislikes": 25,
+            "posterindex": 0
+      },
+      {
+            "title": "(500) Days of Summer",
+            "iscore": 7.7,
+            "rating": "PG-13",
+            "runtime": 95,
+            "released": [2009, 8, 7],
+            "country": "USA",
+            "posters": [
+                  "https://m.media-amazon.com/images/I/61+eskJahYL.jpg",
+                  "https://cdn.displate.com/artwork/857x1200/2020-05-19/c87b953b04f4d89285abd6c1d191ba15_9e25f8c3105c7a3347ba43f1d1608c96.jpg"
+            ],
+            "imdb": "https://www.imdb.com/title/tt1022603/",
+            "website": "https://www.foxsearchlight.com/500daysofsummer/",
+            "likes": 300,
+            "dislikes": 20,
+            "posterindex": 0
+      },
+      {
+            "title": "El Camino: A Breaking Bad Movie",
+            "iscore": 7.3,
+            "rating": "R",
+            "runtime": 122,
+            "released": [2019, 10, 11],
+            "country": "USA",
+            "posters": [
+                  "https://m.media-amazon.com/images/I/81TqUiSXs8L._AC_UF1000,1000_QL80_.jpg",
+                  "https://media-cache.cinematerial.com/p/500x/zbrzl4xt/el-camino-a-breaking-bad-movie-movie-poster.jpg?v=1644248560"
+            ],
+            "imdb": "https://www.imdb.com/title/tt9243946/",
+            "website": "https://www.netflix.com/title/81159258",
+            "likes": 250,
+            "dislikes": 15,
+            "posterindex": 0
       }
 ]
