@@ -21,6 +21,13 @@ body {
     margin: 0;
     letter-spacing: 2px;
     text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.header h1:hover {
+    transform: scale(1.1) skewY(-2deg);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 3px 6px rgba(0,0,0,0.6);
+    color: #FFD700;
 }
 
 /* This stylizes the main page area */
@@ -61,6 +68,12 @@ body {
     margin: 0;
     font-size: 18px;
     font-weight: 800;
+    transition: all 300ms ease;
+}
+.title:hover {
+    color: #008700;
+    transform: translateX(8px) rotate(1deg);
+    text-shadow: 0 2px 8px rgba(0, 135, 0, 0.4);
 }
 .released,
 .rated {

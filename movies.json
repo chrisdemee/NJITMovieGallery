@@ -28,17 +28,20 @@
             "posterindex": 0
       },
       {
-            "title": "The Godfather: Part II",
-            "iscore": 9.0,
-            "rating": "R",
-            "runtime": 202,
-            "released": [1974, 12, 20],
+            "title": "42",
+            "iscore": 7.5,
+            "rating": "PG-13",
+            "runtime": 128,
+            "released": [2013, 4, 15],
             "country": "USA",
-            "posters": ["img/godfather2.jpg", "img/godfather2_2.jpg"],
-            "imdb": "http://www.imdb.com/title/tt0071562",
-            "website": "https://www.facebook.com/thegodfather",
-            "likes": 855,
-            "dislikes": 99,
+            "posters": [
+                  "https://sidewalkfest.com/wp-content/uploads/2024/02/iZ7jVGQWj3eBUdqwAPUlKk0BaS2.jpg",
+                  "https://m.media-amazon.com/images/I/51XwYUK6JxL._AC_UF894,1000_QL80_.jpg"
+            ],
+            "imdb": "https://www.imdb.com/title/tt2267998/",
+            "website": "https://www.warnerbros.com/movies/42",
+            "likes": 550,
+            "dislikes": 45,
             "posterindex": 0
       },
       {
@@ -56,17 +59,20 @@
             "posterindex": 0
       },
       {
-            "title": "Schindler's List",
-            "iscore": 8.9,
-            "rating": "R",
-            "runtime": 195,
-            "released": [1993, 11, 30],
+            "title": "Star Wars: Episode I - The Phantom Menace",
+            "iscore": 6.5,
+            "rating": "PG",
+            "runtime": 136,
+            "released": [1999, 5, 19],
             "country": "USA",
-            "posters": ["img/schindlerslist.jpg"],
-            "imdb": "http://www.imdb.com/title/tt0108052",
-            "website": "https://www.uphe.com/schindlers-list",
-            "likes": 812,
-            "dislikes": 101,
+            "posters": [
+                  "https://i.ebayimg.com/images/g/hv4AAOSw34FVHKY3/s-l1200.jpg",
+                  "https://m.media-amazon.com/images/I/81QepEegyKL.jpg"
+            ],
+            "imdb": "https://www.imdb.com/title/tt0120915/",
+            "website": "https://www.starwars.com/",
+            "likes": 750,
+            "dislikes": 200,
             "posterindex": 0
       },
       {
@@ -92,7 +98,7 @@
             "country": "USA",
             "posters": [
                   "https://m.media-amazon.com/images/I/717QDxYBkbL._AC_UF894,1000_QL80_.jpg",
-                  "https://www.amazon.com/BABY-DRIVER-Original-Poster-Wright/dp/B073RPP8VQ"
+                  "https://ih1.redbubble.net/image.1196130219.1866/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
             ],
             "imdb": "https://www.imdb.com/title/tt3890160/",
             "website": "https://www.sonypictures.com/movies/babydriver",
@@ -108,7 +114,7 @@
             "released": [2009, 8, 7],
             "country": "USA",
             "posters": [
-                  "https://m.media-amazon.com/images/I/61+eskJahYL.jpg",
+                  "https://d3tvwjfge35btc.cloudfront.net/Assets/62/149/L_p0014114962.jpg",
                   "https://cdn.displate.com/artwork/857x1200/2020-05-19/c87b953b04f4d89285abd6c1d191ba15_9e25f8c3105c7a3347ba43f1d1608c96.jpg"
             ],
             "imdb": "https://www.imdb.com/title/tt1022603/",
@@ -132,6 +138,23 @@
             "website": "https://www.netflix.com/title/81159258",
             "likes": 250,
             "dislikes": 15,
+            "posterindex": 0
+      },
+      {
+            "title": "Spider-Man: No Way Home",
+            "iscore": 8.2,
+            "rating": "PG-13",
+            "runtime": 159,
+            "released": [2021, 12, 17],
+            "country": "USA",
+            "posters": [
+                  "https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/wBoAAOSwPP9i3vjZ/$_57.JPG?set_id=880000500F",
+                  "https://m.media-amazon.com/images/I/71gx5DiQa-L.jpg"
+            ],
+            "imdb": "https://www.imdb.com/title/tt10872600/",
+            "website": "https://www.sonypictures.com/movies/spider-man-no-way-home",
+            "likes": 600,
+            "dislikes": 40,
             "posterindex": 0
       }
 ]
