@@ -102,13 +102,13 @@ function initVueApp() {
       vue_app.mount('#vue_app')
 }
 
-// If Vue is already present, initialize immediately.
+
 if (window.Vue) {
       initVueApp()
 } else {
-      // Poll for Vue being available (gives time if the CDN script is still loading).
+      // Poll for Vue available
       let tries = 0
-      const maxTries = 100 // ~10 seconds at 100ms intervals
+      const maxTries = 100 
       const interval = setInterval(() => {
             if (window.Vue) {
                   clearInterval(interval)

@@ -1,4 +1,4 @@
-/* This stylizes the page defaults */
+
 html,
 body {
     margin: 0;
@@ -7,8 +7,6 @@ body {
     overflow: auto;
     background-image: url(img/geometry.jpg);
 }
-
-/* This stylizes the header area */
 .header {
     padding: 15px;
     text-align: center;
@@ -30,13 +28,13 @@ body {
     color: #FFD700;
 }
 
-/* This stylizes the main page area */
+
 .main {
     background-color: #f2f2f2;
     padding: 40px 0;
 }
 
-/* This stylizes the poster area and poster images */
+
 .thumbnail {
     border: 0px;
     position: relative;
@@ -52,7 +50,7 @@ body {
     border: 2px dashed black;
 }
 
-/* This stylizes your "Poster X of Y" text */
+/* "Poster X of Y" text */
 .imageInfo {
 	color: #959595;
 	font-style: italic;
@@ -61,7 +59,7 @@ body {
 	padding-right: 5px;
 }
 
-/* This stylizes your Title and Rating Text */
+
 .title,
 .released {
     color: #444;
@@ -82,7 +80,7 @@ body {
     font-weight: 200;
 }
 
-/* This shapes your IMDB score area */
+
 .score {
     background-color: #39D1B4;
     color: #fff;
@@ -99,7 +97,7 @@ body {
     border-radius: 50%;
 }
 
-/* This contains your like and dislike buttons */
+
 .social {
     text-align: right;
     -webkit-user-select: none;
@@ -110,7 +108,7 @@ body {
     top: 0;
 }
 
-/* This shapes your like and dislike buttons */
+
 .likes,
 .dislikes {
     cursor: pointer;
@@ -130,33 +128,33 @@ body {
     transition: 200ms;
 }
 
-/* Default and hover colors for likes/dislikes */
+
 .likes {
-    background-color: #008700; /* green */
+    background-color: #008700; 
     color: #ffffff;
 }
 .likes:hover {
-    background-color: #9edd87; /* light-green */
+    background-color: #9edd87; 
     color: #008700;
 }
 .dislikes {
-    background-color: #f65a5b; /* red */
+    background-color: #f65a5b; 
     color: #ffffff;
 }
 .dislikes:hover {
-    background-color: #fdd6d6; /* light-red */
+    background-color: #fdd6d6;
     color: #f65a5b;
 }
 
-/* This makes sure your Github Button is centered */
+
 .footer {
     text-align: center;
     margin: 80px 0 110px;
 }
 
-/* This makes sure your Github Button text is small */
+
 #github{
 	font-size: small;
 }
 
-/* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+

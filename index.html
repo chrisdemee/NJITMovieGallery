@@ -16,7 +16,6 @@
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
 	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
-	<!-- Vue 3 (production) from CDN -->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
 
@@ -75,7 +74,7 @@
 	    </div>
 	</div>
 
-	<!-- Load site.js only after Vue is available (fallback loader) -->
+	<!-- Load site.js after the vue is available -->
 	<script>
 	(function(){
 		function loadScript(src, cb){
@@ -88,7 +87,7 @@
 
 		function ensureVueAndLoadSite(){
 			if(window.Vue){ loadScript('site.js'); return; }
-			// Try primary CDN first
+			// try primary CDN first
 			loadScript('https://unpkg.com/vue@3/dist/vue.global.prod.js', function(err){
 				if(window.Vue){ loadScript('site.js'); return; }
 				// fallback to jsDelivr
